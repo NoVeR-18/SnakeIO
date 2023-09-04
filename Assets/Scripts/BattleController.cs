@@ -69,7 +69,7 @@ public class BattleController : MonoBehaviour
                 //Debug.Log(Vector3Int.FloorToInt(_player.transform.position));
             }
         }
-        if (pos == Vector3Int.FloorToInt(appleTransform.position))
+        if (pos == Vector3Int.FloorToInt((Vector2)appleTransform.position))
         {
             Debug.Log("eat");
             Grow();
