@@ -91,7 +91,7 @@ public class BattleController : MonoBehaviour
                0
            );
         if (_backGround.HasTile(Vector3Int.FloorToInt(randomPosition)) && !contain())
-            appleTransform = Instantiate(apple, randomPosition + new Vector3(0.5f, 0.5f), Quaternion.identity).transform;
+            appleTransform = Instantiate(apple, randomPosition + new Vector3(0.5f, 0.5f, -10f), Quaternion.identity).transform;
         else
             CreateApple();
 
